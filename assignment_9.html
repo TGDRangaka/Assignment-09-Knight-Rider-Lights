@@ -33,6 +33,7 @@
             aspect-ratio: 1/1;
             background-color: white;
             border-radius: 50%;
+            filter: blur(5px);
         }
 
         button {
@@ -129,7 +130,7 @@
 
     $("#start").on("click", () => {
         if (interval == null){
-            interval = setInterval(lightOn, 20);
+            interval = setInterval(lightOn, 50);
             $("#audio")[0].play()
         }
     });
